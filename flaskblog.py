@@ -1,12 +1,17 @@
+"""Blog flask app"""
+
 from flask import Flask
 
-app = Flask("__name__")
+APP = Flask("__name__")
 
-@app.route("/")
-@app.route("/home")
+@APP.route("/")
+@APP.route("/home")
 def home():
+	"""Home view"""
 	return "<h1>Home Page</h1>"
 
-@app.route("/about")
+@APP.route("/about")
 def about():
+	"""About view"""
 	return "<h1>About Page</h1>"
+	
