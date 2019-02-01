@@ -467,6 +467,45 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "flaskblog.py",
+			"settings":
+			{
+				"buffer_size": 604,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<!-- Required meta tags -->\n\t    <meta charset=\"utf-8\">\n\t    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\n\t    <!-- Bootstrap CSS -->\n    \t<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css\" integrity=\"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS\" crossorigin=\"anonymous\">\n\n    \t<link rel=\"stylesheet\" type=\"text/css\" href=\"{{ url_for('static', filename='main.css') }}\">\n\n\t\t{% if title %}\n\t\t\t<title>Flask blog - {{ title }}</title>\n\t\t{% else %}\n\t\t\t<title>Flask blog</title>\n\t\t{% endif %}\n\t</head>\n\t<body>\n\t\t<header class=\"site-header\">\n\t      <nav class=\"navbar navbar-expand-md navbar-dark bg-steel fixed-top\">\n\t        <div class=\"container\">\n\t          <a class=\"navbar-brand mr-4\" href=\"/\">Flask\t Blog</a>\n\t          <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggle\" aria-controls=\"navbarToggle\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n\t          <span class=\"navbar-toggler-icon\"></span>\n\t          </button>\n\t          <div class=\"collapse navbar-collapse\" id=\"navbarToggle\">\n\t            <div class=\"navbar-nav mr-auto\">\n\t              <a class=\"nav-item nav-link\" href=\"/\">Home</a>\n\t              <a class=\"nav-item nav-link\" href=\"/about\">About</a>\n\t            </div>\n\t            <!-- Navbar Right Side -->\n\t            <div class=\"navbar-nav\">\n\t              <a class=\"nav-item nav-link\" href=\"/login\">Login</a>\n\t              <a class=\"nav-item nav-link\" href=\"/register\">Register</a>\n\t            </div>\n\t          </div>\n\t        </div>\n\t      </nav>\n\t    </header>\n\t    <main role=\"main\" class=\"container\">\n\t      <div class=\"row\">\n\t        <div class=\"col-md-8\">\n\t          {% block content %}{% endblock %}\n\t        </div>\n\t        <div class=\"col-md-4\">\n\t          <div class=\"content-section\">\n\t            <h3>Our Sidebar</h3>\n\t            <p class='text-muted'>You can put any information here you'd like.\n\t              <ul class=\"list-group\">\n\t                <li class=\"list-group-item list-group-item-light\">Latest Posts</li>\n\t                <li class=\"list-group-item list-group-item-light\">Announcements</li>\n\t                <li class=\"list-group-item list-group-item-light\">Calendars</li>\n\t                <li class=\"list-group-item list-group-item-light\">etc</li>\n\t              </ul>\n\t            </p>\n\t          </div>\n\t        </div>\n\t      </div>\n\t    </main>\n\n\t\t<!-- Optional JavaScript -->\n\t    <!-- jQuery first, then Popper.js, then Bootstrap JS -->\n\t    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n\t    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js\" integrity=\"sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut\" crossorigin=\"anonymous\"></script>\n\t    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js\" integrity=\"sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k\" crossorigin=\"anonymous\"></script>\n\t</body>\n</html>",
+			"file": "templates/layout.html",
+			"file_size": 3301,
+			"file_write_time": 131932405461543740,
+			"settings":
+			{
+				"buffer_size": 3235,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/home.html",
+			"settings":
+			{
+				"buffer_size": 554,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/about.html",
+			"settings":
+			{
+				"buffer_size": 91,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -556,6 +595,11 @@
 	],
 	"file_history":
 	[
+		"/D/projects-work-space/BlogAppFlask/static/main.css",
+		"/D/projects-work-space/BlogAppFlask/.pylintrc",
+		"/D/projects-work-space/BlogAppFlask/pylintrc",
+		"/D/projects-work-space/BlogAppFlask/.git/config",
+		"/D/projects-work-space/BlogAppFlask/requirements.txt",
 		"/D/projects-work-space/iReporter/style.css",
 		"/D/projects-work-space/python-workspace/ireporterWithSqliteDdB/app.py",
 		"/D/projects-work-space/python-workspace/ireporterWithSqliteDdB/errors/exceptions.py",
@@ -652,6 +696,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mixed-indentation",
+			"app"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -659,6 +705,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"APP"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -669,8 +716,122 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "flaskblog.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/layout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								864,
+								864
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 91,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
 			]
 		}
 	],
