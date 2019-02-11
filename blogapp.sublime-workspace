@@ -4,12 +4,80 @@
 		"selected_items":
 		[
 			[
-				"dat",
-				"datetime"
+				"o",
+				"output_size"
+			],
+			[
+				"p",
+				"picture_file"
+			],
+			[
+				"sav",
+				"save_picture"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"pi",
+				"picture_fn"
+			],
+			[
+				"for",
+				"form_picture"
+			],
+			[
+				"Fi",
+				"FileAllowed"
+			],
+			[
+				"fl",
+				"flask_wtf"
 			],
 			[
 				"da",
-				"date_posted"
+				"data"
+			],
+			[
+				"co",
+				"commit"
+			],
+			[
+				"s",
+				"session"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"ue",
+				"username"
+			],
+			[
+				"ne",
+				"next_page"
+			],
+			[
+				"n",
+				"next_page"
+			],
+			[
+				"lo",
+				"login_manager"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"ha",
+				"hashed_password"
+			],
+			[
+				"dat",
+				"datetime"
 			],
 			[
 				"con",
@@ -28,16 +96,8 @@
 				"SQLAlchemy"
 			],
 			[
-				"for",
-				"form"
-			],
-			[
 				"AC",
 				"action\tAttr"
-			],
-			[
-				"re",
-				"return"
 			],
 			[
 				"form",
@@ -78,10 +138,6 @@
 			[
 				"ex",
 				"execute"
-			],
-			[
-				"co",
-				"conn"
 			],
 			[
 				"de",
@@ -288,10 +344,6 @@
 				"cancelEditOption"
 			],
 			[
-				"fl",
-				"flex-start\talign-content"
-			],
-			[
 				"flx",
 				"flex-direction\tproperty"
 			],
@@ -366,10 +418,6 @@
 			[
 				"cent",
 				"central-box"
-			],
-			[
-				"p",
-				"padding"
 			],
 			[
 				"ce",
@@ -466,81 +514,17 @@
 			[
 				"vi",
 				"void"
-			],
-			[
-				"pu",
-				"public"
-			],
-			[
-				"th",
-				"this"
-			],
-			[
-				"fro",
-				"from_string"
-			],
-			[
-				"h",
-				"h1\tTag"
-			],
-			[
-				"conte",
-				"context"
-			],
-			[
-				"H",
-				"HttpResponse"
-			],
-			[
-				"fi",
-				"fib"
-			],
-			[
-				"if",
-				"ifmain\tif __name__ == '__main__'"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "run.py",
-			"settings":
-			{
-				"buffer_size": 108,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "flaskblog/__init__.py",
-			"settings":
-			{
-				"buffer_size": 285,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "flaskblog/routes.py",
 			"settings":
 			{
-				"buffer_size": 1484,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "flaskblog/models.py",
-			"settings":
-			{
-				"buffer_size": 1027,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "flaskblog/forms.py",
-			"settings":
-			{
-				"buffer_size": 912,
+				"buffer_size": 3351,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -629,21 +613,24 @@
 	},
 	"expanded_folders":
 	[
-		"/D/projects-work-space/BlogAppFlask"
+		"/D/projects-work-space/BlogAppFlask",
+		"/D/projects-work-space/BlogAppFlask/flaskblog",
+		"/D/projects-work-space/BlogAppFlask/templates"
 	],
 	"file_history":
 	[
-		"/D/projects-work-space/BlogAppFlask/flaskblog/__init__.py",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/routes.py",
-		"/D/projects-work-space/BlogAppFlask/run.py",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/models.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/forms.py",
+		"/D/projects-work-space/BlogAppFlask/templates/account.html",
+		"/D/projects-work-space/BlogAppFlask/templates/register.html",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/routes.py",
+		"/D/projects-work-space/BlogAppFlask/templates/layout.html",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/models.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/__init__.py",
+		"/D/projects-work-space/BlogAppFlask/templates/about.html",
+		"/D/projects-work-space/BlogAppFlask/run.py",
 		"/D/projects-work-space/BlogAppFlask/forms.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog.py",
-		"/D/projects-work-space/BlogAppFlask/templates/layout.html",
-		"/D/projects-work-space/BlogAppFlask/templates/register.html",
 		"/D/projects-work-space/BlogAppFlask/templates/login.html",
-		"/D/projects-work-space/BlogAppFlask/templates/about.html",
 		"/D/projects-work-space/BlogAppFlask/templates/home.html",
 		"/D/projects-work-space/BlogAppFlask/static/main.css",
 		"/D/projects-work-space/BlogAppFlask/.pylintrc",
@@ -775,75 +762,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "run.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 108,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								108
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "flaskblog/__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "flaskblog/routes.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1484,
+						"buffer_size": 3351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								2571,
+								2571
 							]
 						],
 						"settings":
@@ -852,68 +783,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1387.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "flaskblog/models.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1027,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "flaskblog/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 912,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
