@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"register",
+				"register_blueprint"
+			],
+			[
 				"fla",
 				"flaskblog"
 			],
@@ -510,32 +514,17 @@
 			[
 				"ce",
 				"central-box"
-			],
-			[
-				"di",
-				"div\tTag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "flaskblog/users/routes.py",
+			"file": "flaskblog/errors/handlers.py",
 			"settings":
 			{
-				"buffer_size": 4233,
+				"buffer_size": 390,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "import os\nimport secrets\nfrom PIL import Image\nfrom flask import url_for\nfrom flask_mail import Message\nfrom flaskblog import mail\nfrom flask import current_app\n\n\ndef save_picture(form_picture):\n\trandom_hex_name = secrets.token_hex(8)\n\t_, f_ext = os.path.splitext(form_picture.filename)\n\tpicture_fn = random_hex_name + f_ext\n\tpicture_path = os.path.join(current_app.root_path, 'static/profile_pics', picture_fn)\n\n\toutput_size = (125, 125)\n\ti = Image.open(form_picture)\n\ti.thumbnail(output_size)\n\ti.save(picture_path)\n\n\treturn picture_fn\n\n\ndef send_reset_email(user):\n\ttoken = user.get_reset_token()\n\tmessage = Message('Password Reset Request', sender='noreply@demo.com', \n\t\trecipients=[user.email])\n\tmessage.body = f'''To reset your password, visit the following link:\n{url_for('users.reset_token', token=token, _external=True)}\n\nIf you did not make this request then simply  ignore  this email and no change will be made.\n\t'''\n\tmail.send(message)\n\t",
-			"file": "flaskblog/users/utils.py",
-			"file_size": 981,
-			"file_write_time": 131949127175771277,
-			"settings":
-			{
-				"buffer_size": 949,
 				"line_ending": "Windows"
 			}
 		}
@@ -630,16 +619,23 @@
 	[
 		"/D/projects-work-space/BlogAppFlask",
 		"/D/projects-work-space/BlogAppFlask/flaskblog",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/users"
+		"/D/projects-work-space/BlogAppFlask/flaskblog/errors"
 	],
 	"file_history":
 	[
-		"/D/projects-work-space/BlogAppFlask/flaskblog/config.py",
-		"/D/projects-work-space/BlogAppFlask/run.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/__init__.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/errors/handlers.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/config.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/main/routes.py",
+		"/D/projects-work-space/BlogAppFlask/templates/errors/404.html",
+		"/D/projects-work-space/BlogAppFlask/templates/errors/403.html",
+		"/D/projects-work-space/BlogAppFlask/templates/errors/500.html",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/errors/__init__.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/users/routes.py",
+		"/D/projects-work-space/BlogAppFlask/flaskblog/users/utils.py",
+		"/D/projects-work-space/BlogAppFlask/run.py",
 		"/C/Users/Arnold Kyeza/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/models.py",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/users/utils.py",
 		"/D/projects-work-space/BlogAppFlask/.pylintrc",
 		"/D/projects-work-space/BlogAppFlask/templates/user_posts.html",
 		"/D/projects-work-space/BlogAppFlask/templates/register.html",
@@ -647,14 +643,12 @@
 		"/D/projects-work-space/BlogAppFlask/templates/login.html",
 		"/D/projects-work-space/BlogAppFlask/templates/layout.html",
 		"/D/projects-work-space/BlogAppFlask/templates/home.html",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/users/routes.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/posts/routes.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/routes.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/forms.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/posts/forms.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/users/forms.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/main/forms.py",
-		"/D/projects-work-space/BlogAppFlask/flaskblog/main/routes.py",
 		"/D/projects-work-space/BlogAppFlask/flaskblog/main/__init__.py",
 		"/D/projects-work-space/BlogAppFlask/templates/reset_request.html",
 		"/D/projects-work-space/BlogAppFlask/templates/reset_token.html",
@@ -805,62 +799,40 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "flaskblog/users/routes.py",
+					"file": "flaskblog/errors/handlers.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4233,
+						"buffer_size": 390,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3360,
-								3360
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1014.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "flaskblog/users/utils.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 949,
-						"regions":
-						{
-						},
-						"selection":
-						[
+								137,
+								137
+							],
 							[
-								922,
-								922
+								238,
+								238
+							],
+							[
+								339,
+								339
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 468.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -875,7 +847,7 @@
 	},
 	"input":
 	{
-		"height": 42.0
+		"height": 73.0
 	},
 	"layout":
 	{
